@@ -26,9 +26,13 @@ st.markdown("---------------")
 
 
 # load model
-import pickle
+# import pickle
+import joblib
 
-loaded_model = pickle.load(open('model_pickle/trained_pipe_co2.sav', 'rb'))
+
+# loaded_model = pickle.load(open('model_pickle/trained_pipe_co2.sav', 'rb'))
+loaded_model = joblib.load('model_pickle/trained_pipe_co2.joblib')
+
 
 # Inputs for the dropdown boxes:
 fuel_code_options = {
