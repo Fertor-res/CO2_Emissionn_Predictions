@@ -94,7 +94,7 @@ new_plant = pd.DataFrame({
 if st.button("Predict CO2 Emissions"):
     co2_prediction = loaded_model.predict(new_plant)[0] #Extract scalar from array
     st.session_state.co2_prediction = co2_prediction
-    st.success(f"The estimated CO2 emission for your plant are: {co2_prediction: .2f} Ton/year")
+    st.success(f"The estimated CO2 emission for your plant are: {co2_prediction:,.0f} Ton/year")
 
 st.markdown("<div style='text-align: right'><strong> Data source for modelling:</strong> https://www.eia.gov/electricity/data </div>",
             unsafe_allow_html=True
