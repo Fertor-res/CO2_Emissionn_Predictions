@@ -24,18 +24,24 @@ The model was trained using **measured emissions data** (not calculated) from fo
 
 ### 1. Clone the Repository
 
-<pre>```bash
-git clone https://github.com/your-username/co2-emissions-predictor.gitcd co2-emissions-predictor```</pre>
+```
+bash
+git clone https://github.com/your-username/co2-emissions-predictor.gitcd co2-emissions-predictor
+```
 
 ### 2. Install Dependencies
 Make sure you have Python 3.8+ installed. Then install the required packages:
 
-<pre>```bash
-pip install -r requirements.txt```</pre>
+```
+bash
+pip install -r requirements.txt
+```
 
 ### 3. Run the App
-<pre>```bash
-streamlit run app.py```</pre>
+```
+bash
+streamlit run app.py
+```
 
 The app will open in your default browser at http://localhost:8501.
 
@@ -52,19 +58,23 @@ The app will open in your default browser at http://localhost:8501.
 
 ## Project Structure
 
+```
 co2-emissions-predictor/
 ├── app.py                      # Main Streamlit app
 ├── model_pickle/
 │   └── trained_pipe_co2.joblib # Trained Random Forest model
 ├── requirements.txt            # Python dependencies
 └── README.md                   # Project documentation
+```
+
 
 
 ## Example Inputs
 
-|Parameter                                 |Example Value       | 
+| Parameter                                |Example Value       |
+|------------------------------------------|--------------------|
 | Fuel Consumption for Electric Generation |1,200,000 MMBtu     | 
-|  Total Fuel Consumption|1,500,000 MMBtu  |1,500,000 MMBtu     |
+| Total Fuel Consumption|1,500,000 MMBtu  |1,500,000 MMBtu     |
 | Generation                               |500,000,000 kWh     | 
 | Fuel Code                                |NG - Natural Gas    | 
 | Prime Mover                              | ST - Steam Turbine | 
